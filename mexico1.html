@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+    <meta charset='UTF-8' />
+    <meta name="viewport" content=width=device-width, initial-scale="1.0" />
+    <meta http-equiv="x-UA-compatible" content="IE=edge" />
+    <meta http-equiv="refresh" content="60" />
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <meta name="author" content="" />
+    <!-- favicon-->
+    <link rel="icon" type="imge/x-icon" href="" />
+    <!--font family-->
+    <link rel="stylesheet" href="fonts/NotoSans-Regular.ttf" />
+    <!-- fontawesone icon -->
+    <link rel="stylesheet" href="icons/css/all.css" />
+    <link rel="stylesheer" href="icons/js/all.js" />
+    <title>Traveling On Mexico’s New</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, sans-serif;
+
+        }
+
+        /* Expert section */
+
+        .Exter_card {
+            padding: 30px 190px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 50px;
+            /* Optional: Add spacing between columns */
+        }
+
+        .item h1 {
+            color: black;
+            font-size: 3rem;
+            padding-bottom: 20px;
+
+        }
+
+        .item h1:hover {
+            color: chocolate;
+        }
+
+        .item p {
+            color: dimgrey;
+        }
+
+        .item .image1 {
+            width: 45%;
+            height: auto;
+            padding-left: 20px;
+
+        }
+
+        .item h3 {
+            font-size: x-large;
+            font-style: oblique;
+            padding: 15px 0px;
+            text-align: justify;
+            font-weight: lighter;
+        }
+
+        .item h4 {
+            font-family: Helvetica;
+            font-size: larger;
+            font-weight: inherit;
+            padding: 18px 0px;
+            text-align: justify;
+        }
+
+        .item h5 {
+            font-family: Verdana;
+            font-size: x-large;
+            font-weight: 300;
+            padding: 18px 0px;
+            text-align: justify;
+        }
+
+        .item h6 {
+            font-size: large;
+            padding: 15px 0px;
+            font-weight: 200;
+        }
+
+        /* */
+        .info {
+            padding: 50px 380px;
+
+
+        }
+
+        .author-card {
+            display: flex;
+            align-items: center;
+            background-color: #fbf5f5;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            margin: 20px;
+            gap: 20px;
+        }
+        .author-card:hover{
+            filter: drop-shadow(1);
+    transform: scale(1.03);
+        }
+        .author-photo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+        }
+
+        .author-info {
+            flex: 1;
+        }
+
+        .author-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .author-info p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .about-author-btn {
+            background-color: #cccccc;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .about-author-btn:hover {
+            background-color: #b0b0b0;
+        }
+
+        /* */
+        .Exter_cards {
+            padding: 30px 190px;
+        }
+
+        .Exter_cards h2 {
+            font-size: 3rem;
+            padding: 35px 0px;
+
+            color: #0b0a0a;
+            border-radius: none;
+
+        }
+
+        .items h1 {
+            padding-top: 30px;
+            color: black;
+            font-size: 3rem;
+            padding-bottom: 20px;
+
+        }
+
+        .items h1:hover {
+            color: chocolate;
+        }
+
+        .items p {
+            color: dimgrey;
+        }
+
+        .items .image1 {
+            width: 45%;
+            height: auto;
+            padding-left: 20px;
+            padding: 20px 0px;
+            justify-content: center;
+
+        }
+        .images1:hover{
+            filter: drop-shadow(1);
+    transform: scale(1.03);
+        }
+
+        .items h3 {
+            font-size: x-large;
+            font-style: oblique;
+            color: rgb(8, 27, 33);
+            padding: 15px 0px;
+            text-align: justify;
+            font-weight: lighter;
+        }
+
+        .items h4 {
+            font-family: Helvetica;
+            font-size: larger;
+            font-weight: inherit;
+            padding: 18px 0px;
+            text-align: justify;
+        }
+
+        .items h5 {
+            font-family: Verdana;
+            font-size: x-large;
+            font-weight: 300;
+            padding: 18px 0px;
+            text-align: justify;
+        }
+
+        .items h6 {
+            font-size: large;
+            padding: 15px 0px;
+            font-weight: 200;
+            text-align: end;
+            text-align: justify;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Expert Section -->
+    <div class="Exter_card">
+
+        <div class="item">
+            <h1>The Mayan Train: Traveling On Mexico’s New </h1>
+            <p>Last updated: September 20, 2024</p>
+            <img class="imag1" src="images/Tren Maya.png" alt="image">
+
+            <h3>Tren Maya (the Mayan Train) is a new and exciting way to explore Mexico’s culturally rich regions of the
+                Yucatan Peninsula. Learn where the new train goes, how to buy tickets, and what’s coming next..</h3>
+            <h4>Mexico’s Yucatan Peninsula is a place where the ancient world meets modern adventure, a land of dense
+                jungles, crystalline cenotes, and some of the world’s most fascinating archaeological sites. For
+                centuries, the ancient Mayan civilization thrived here, leaving behind incredible ruins that still
+                captivate explorers and historians today.</h4>
+            <h5>Tren Maya (aka the Mayan Train) is an ambitious project launched by the Mexican government which
+                promises to transform travel in the Yucatan Peninsula in Mexico.</h5>
+            <h4>The train makes it easier than ever to explore the region’s diverse attractions — from pristine beaches
+                to the depths of the jungle. For travelers eager to experience the wonders of the Yucatan, the Mayan
+                Train offers a unique and efficient way to uncover Mexico’s hard-to-reach places — without the hassle of
+                renting a car and driving..</h4>
+
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="author-card">
+
+            <div class="author-photo">
+                <img src="https://thumbs.dreamstime.com/b/pretty-female-tourist-traveling-nature-carefree-young-woman-making-touristic-travel-forest-holding-binoculars-74739503.jpg"
+                    alt="Author Photo">
+            </div>
+            <div class="author-info">
+                <h2>Hi, I’m Matthew Karsten</h2>
+                <p>
+                    I’ve been traveling the world for 10+ years as a professional photographer & writer.
+                    I hope you enjoy my Mayan train travel tips! If you find them useful, using my affiliate links
+                    will give me a small commission, at no extra cost to you. Thanks!
+                </p>
+                <a target="_blank" href="About chandu.html"><button class="about-author-btn">About The
+                        Author</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Expert Section -->
+    <div class="Exter_cards">
+        <h2>Mayan Train Travel Guide</h2>
+        <div class="items">
+
+            <img class="imag1" src="images/map.webp" alt="image">
+            <h3>The Mayan Train is a new railway line that spans approximately 1,500 kilometers (about 930 miles) and
+                connects several key cities and tourist destinations throughout the Yucatan Peninsula.</h3>
+            <h5>Designed with both tourists and locals in mind, the train aims to boost regional development, improve
+                connectivity, and provide sustainable transportation alternatives.</h5>
+            <h6>With modern carriages featuring comfortable seating, dining options, and large windows for panoramic
+                views, the Mayan Train promises a relaxing journey through one of Mexico’s most fascinating regions.
+            </h6>
+            <h4>The train’s route passes through five states: Chiapas, Tabasco, Campeche, Yucatan, and Quintana Roo,
+                providing access to popular destinations such as Cancun, Playa del Carmen, Tulum, Merida, and Palenque.
+            </h4>
+        </div>
+
+
+
+        <div class="items">
+
+            <h1>2. Stay At A Hacienda Estate</h1>
+            <p>Last updated: November 20, 2024</p>
+            <img class="imag1" src="images/traveling2.webp" alt="image">
+            <h3>Merida is full of old Spanish style Haciendas – large estates used by the Spanish during colonial times.
+                Many of these haciendas have been renovated and turned into hotels and vacation apartments that tourists
+                can rent.</h3>
+            <h5>These beautiful & historic stone buildings often come with garden courtyards and pools, while being
+                surprisingly affordable too! And many are hidden right in the city center.</h5>
+            <h4>For the price of ONE night at a beach resort in Cancun, you can stay at a luxury hacienda in Merida for
+                ONE WEEK!</h4>
+            <h6>Every time we visit Merida we try to stay at one, and it really makes the trip extra special. You’ll
+                find some of my favorites below.</h6>
+        </div>
+
+
+
+        <div class="items">
+            <h1>Mayan Train Western Route (Open Now)</h1>
+            <p>Where does the Mayan train go? One of the most exciting aspects of the Mayan Train is the diverse array
+                of destinations it connects. Whether you’re a history enthusiast, a nature lover, or simply looking to
+                relax on a beautiful beach, the train’s route has something for everyone.</p>
+            <h1>1. Cancun: Gateway To The Yucatan</h1>
+            <img class="imag1" src="images/cancun-hotels-900x600.jpg.webp" alt="">
+
+            <h3>Most travelers will start their Mayan train journey in Cancun, the train’s northern terminus and one of
+                Mexico’s most popular beach destinations. The Cancun train station is located 20 minutes away from
+                Cancun International Airport, however if you’ve purchased a train ticket, there is a free shuttle from
+                the airport to the station.</h3>
+            <h5>Known for its stunning white-sand beaches, vibrant nightlife, and luxury resorts, Cancun is a perfect
+                starting point for exploring the Yucatan Peninsula. After soaking up the sun and enjoying the turquoise
+                waters of the Caribbean, travelers can board the Mayan Train to begin their adventure deeper into the
+                heart of the Yucatan.</h5>
+
+        </div>
+
+        <div class="items">
+
+            <h1>2. Valladolid</h1>
+            <img class="imag1" src="images/Valladolid image.jpg" alt="">
+
+            <h3>Nestled in the heart of Mexico’s Yucatán Peninsula, Valladolid seamlessly blends colonial charm with
+                Mayan history. This quaint town, with its pastel-colored buildings and cobblestone streets, offers a
+                peaceful retreat away from the bustling tourist hubs.</h3>
+            <h5>Valladolid’s central location makes it an ideal base for exploring nearby cenotes, ancient ruins, and
+                the vibrant culture of the region. Whether you’re wandering through the picturesque town square or
+                savoring local cuisine, Valladolid invites you to slow down and experience the authentic beauty of
+                Mexico.</h5>
+            <h6>ROUTE OPEN: The Mayan train route from Cancun to Valladolid is open. Service runs a few times per day,
+                at a cost of around $24 USD (472 MXN) for the “Tourist Class” ticket.</h6>
+            <h4>TRAVEL TIME: The travel time from Cancun to Valladolid is 1.5 hours by train.</h4>
+        </div>
+
+        <div class="items">
+
+            <h1>3. Chichen Itza: Ancient Wonder Of The World
+                Temple of Kukulcan</h1>
+            Temple of Kukulcan</h1>
+            <img class="imag1" src="images/chichen-itza-mayan-pyramid-900x600.jpg.webp" alt="">
+
+            <h3>Chichén Itzá, one of the New Seven Wonders of the World, stands as a breathtaking testament to the
+                ancient Maya civilization. Located in Mexico’s Yucatán Peninsula, this UNESCO World Heritage Site draws
+                visitors from around the globe with its towering pyramid, El Castillo, and its rich historical
+                significance.</h3>
+            <h5>Once a thriving city, Chichén Itzá is filled with awe-inspiring structures like the Temple of the
+                Warriors and the Sacred Cenote. Whether you’re marveling at its intricate stone carvings or learning
+                about its astronomical significance, Chichén Itzá offers a captivating journey into the mysteries of the
+                past.</h5>
+            <h6>ROUTE OPEN: The Mayan train route from Cancun to Chichen Itza is open. Service runs a few times per day,
+                at a cost of around $30 USD (596 MXN) for the “Tourist Class” ticket.</h6>
+            <h4>TRAVEL TIME: The travel time from Cancun to Chichen Itza is 2 hours by train.</h4>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

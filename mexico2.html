@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+    <meta charset='UTF-8' />
+    <meta name="viewport" content=width=device-width, initial-scale="1.0" />
+    <meta http-equiv="x-UA-compatible" content="IE=edge" />
+    <meta http-equiv="refresh" content="60" />
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <meta name="author" content="" />
+    <!-- favicon-->
+    <link rel="icon" type="imge/x-icon" href="" />
+    <!--font family-->
+    <link rel="stylesheet" href="fonts/NotoSans-Regular.ttf" />
+    <!-- fontawesone icon -->
+    <link rel="stylesheet" href="icons/css/all.css" />
+    <link rel="stylesheer" href="icons/js/all.js" />
+    <title>Traveling On Mexico’s New</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, sans-serif;
+
+        }
+
+        /* Expert section */
+
+        .Exter_card {
+            padding: 30px 190px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 50px;
+            /* Optional: Add spacing between columns */
+        }
+
+        .item h1 {
+            color: black;
+            font-size: 3rem;
+            padding-bottom: 5px;
+            border-bottom: solid 1px #555;
+            text-align: left;
+
+        }
+
+        .item h1:hover {
+            color: chocolate;
+        }
+
+        .item p {
+            font-size: medium;
+            padding-top: 28px;
+            color: dimgrey;
+        }
+
+        .item .image1 {
+            width: 45%;
+            height: auto;
+            padding-left: 20px;
+
+        }
+
+        .item h3 {
+            font-size: x-large;
+            font-style: oblique;
+            padding: 15px 0px;
+            text-align: justify;
+            font-weight: lighter;
+        }
+
+        .item h4 {
+            font-family: Helvetica;
+            font-size: larger;
+            font-weight: inherit;
+            padding: 18px 0px;
+            text-align: justify;
+        }
+
+        .item h5 {
+            font-family: Verdana;
+            font-size: x-large;
+            font-weight: 300;
+            padding: 18px 0px;
+            text-align: justify;
+        }
+
+        .item h6 {
+            font-size: large;
+            padding: 15px 0px;
+            font-weight: 200;
+        }
+
+        /* */
+        .info {
+            padding: 50px 380px;
+
+
+        }
+
+        .author-card {
+            display: flex;
+            align-items: center;
+            background-color: #fbf5f5;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            margin: 20px;
+            gap: 20px;
+        }
+
+        .author-card:hover {
+            filter: drop-shadow(1);
+            transform: scale(1.03);
+        }
+
+        .author-photo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+        }
+
+        .author-info {
+            flex: 1;
+        }
+
+        .author-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .author-info p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .about-author-btn {
+            background-color: #cccccc;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .about-author-btn:hover {
+            background-color: #b0b0b0;
+        }
+
+        /* */
+        .Exter_cards {
+            padding: 30px 190px;
+        }
+
+        .Exter_cards h2 {
+            font-size: 3rem;
+            padding: 35px 0px;
+            text-align: left;
+            color: #0b0a0a;
+            border-radius: none;
+
+        }
+
+        .Exter_cards h2:hover {
+            color: chocolate;
+        }
+
+        .items h1 {
+            padding-top: 30px;
+            color: black;
+            font-size: 3rem;
+            padding-bottom: 20px;
+
+        }
+
+        .items h1:hover {
+            color: chocolate;
+        }
+
+        .items p {
+            color: dimgrey;
+        }
+
+        .items .image1 {
+            width: 45%;
+            height: auto;
+            padding-left: 20px;
+            padding: 20px 0px;
+
+        }
+
+        .images1:hover {
+            filter: drop-shadow(1);
+            transform: scale(1.03);
+        }
+
+        .items h3 {
+            font-size: x-large;
+            font-style: oblique;
+            color: rgb(8, 27, 33);
+            padding: 15px 0px;
+            text-align: justify;
+            font-weight: lighter;
+        }
+
+        .items h4 {
+            font-family: Helvetica;
+            font-size: larger;
+            font-weight: inherit;
+            padding: 18px 0px;
+            text-align: justify;
+        }
+
+        .items h5 {
+            font-family: Verdana;
+            font-size: x-large;
+            font-weight: 300;
+            padding: 18px 0px;
+            text-align: justify;
+        }
+
+        .items h6 {
+            font-size: large;
+            padding: 15px 0px;
+            font-weight: 200;
+            text-align: end;
+            text-align: justify;
+        }
+
+        /* */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        .tour-card {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .tour-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .details {
+            margin-top: 5px;
+        }
+
+        .duration,
+        .rating {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .powered {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+
+        .tour-card h3 {
+            font-family: 'Courier New';
+            font-style: none;
+        }
+
+        p {
+            padding-top: 8px;
+            font-size: x-large;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Expert Section -->
+    <div class="Exter_card">
+
+        <div class="item">
+            <h1>The Mayan Train: Traveling On Mexico’s New </h1>
+            <p>Last updated: September 20, 2024</p>
+            <img class="imag1" src="images/Valladolid, mexico.png" alt="image">
+
+            <h3>Valladolid is a small colorful colonial town in the heart of the Yucatan Peninsula. Here are some of my
+                favorite things to do in and around Valladolid!</h3>
+            <h4>Valladolid is a small town located between Cancun & Merida in Mexico’s Yucatan. It’s one of my favorite
+                towns in Mexico due to its authentic Maya culture and history.</h4>
+            <h5>It receives far fewer tourists than places like Cancun or Tulum, but it’s traditional feel and small
+                town charm make it a wonderful place to visit with many things to see and do nearby — ancient Mayan
+                ruins, swimming holes called cenotes, and nature spots are all within reach.</h5>
+            <h4>Whether you are an avid nature explorer or are looking to experience more cultural side of Mexico,
+                Valladolid has something for everyone. There are tons of things to do in this area, but today we will
+                cover the top activities you do not want to miss!.</h4>
+
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="author-card">
+
+            <div class="author-photo">
+                <img src="https://thumbs.dreamstime.com/b/pretty-female-tourist-traveling-nature-carefree-young-woman-making-touristic-travel-forest-holding-binoculars-74739503.jpg"
+                    alt="Author Photo">
+            </div>
+            <div class="author-info">
+                <h2>Hi, I’m Matthew Karsten</h2>
+                <p>
+                    I’ve been traveling the world for 10+ years as a professional photographer & writer.
+                    I hope you enjoy my Mayan train travel tips! If you find them useful, using my affiliate links
+                    will give me a small commission, at no extra cost to you. Thanks!
+                </p>
+                <a target="_blank" href="About chandu.html"><button class="about-author-btn">About The
+                        Author</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Expert Section -->
+    <div class="Exter_cards">
+        <h2>1. Visit Chichén Itzá</h2>
+        <div class="items">
+
+            <img class="imag1"
+                src="https://s3-us-west-2.amazonaws.com/denomades/blog/wp-content/uploads/2020/05/16201349/Mexico-Chichen-Itza-group-1024x683.jpg"
+                alt="image">
+            <h3>The Mayan ruins of Chichén Itzá are a UNESCO World Heritage Site and one of the most famous
+                archaeological sites in Mexico. This important Mayan-Toltec city features some of the best-preserved
+                carvings and temples in Central America..</h3>
+            <h5>The ancient city stretches over 50 square kilometers. Among the most iconic sights here is The Temple of
+                Kukulkan, which was dedicated to the feathered serpent god Quetzalcoatl. Built on a platform with 91
+                steps on each side, it’s one of Mexico’s most popular tourist attractions.</h5>
+            <h6>Chichén Itzá is just a 40-minute drive from Valladolid – making it an easy day trip for anyone
+                interested in history or archaeology! Most people visit the city by traveling by tour bus from Cancun,
+                however if you visit these ruins after spending a night in Valladolid, you can reach it early when they
+                open and beat the crowds a bit.
+            </h6>
+
+        </div>
+
+
+
+        <div class="items">
+
+            <h2>2. Swim In Cenotes</h2>
+
+            <img class="imag1" src="images/mexico-cenote-.webp" alt="image">
+            <h3>A cenote is a freshwater sinkhole connected to an underground river system. They are native to this area
+                of Mexico. Originating in limestone and dolomite rocks, cenotes form when the roof of an open cave
+                collapses allowing rainwater to seep down into the groundwater below.</h3>
+            <h5>Mexico’s Yucatan Peninsula is covered in cenotes, and they are a great place to go swimming, snorkeling,
+                cliff jumping, and even scuba diving. Valladolid has many cenotes nearby that are fun to visit. Here are
+                my favorites:</h5>
+
+        </div>
+
+
+
+        <div class="items">
+            <h1>3. Cathedral San Gervasio</h1>
+
+            <img class="imag1" src="images/chichen-itza-mayan-pyramid-900x600.jpg.webp" alt="">
+
+            <h3>One of the most prominent places in town is the Cathedral San Gervasio (aka Iglesia de San Servicio).
+                It’s located right off Valladolid’s main square, and the church has regular services.</h3>
+            <h5>You are free to visit and enjoy the interior when they aren’t having a service, and the cathedral is lit
+                up at night time in a beautiful way. The church was built by the Spanish using blocks from Mayan ruins,
+                so it’s pretty unique.</h5>
+
+
+
+            <div class="container">
+                <div class="tour-card">
+                    <img src="images/water falles.jpg" alt="Chichen Itza Cenote">
+                    <h3>Chichen Itza, Cenote & Valladolid Tour</h3>
+                    <div class="details">
+                        <span class="duration">Duration: 12 hours</span>
+                        <span class="rating">4.5 (6487)</span>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <img src="images/water falles1.jpg" alt="Chichen Itza Cenote with Lunch">
+                    <h3>Chichen Itza, Cenote & Valladolid Tour with Lunch</h3>
+                    <div class="details">
+                        <span class="duration">Duration: 12 hours</span>
+                        <span class="rating">4.5 (3406)</span>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <img src="images/water falles2.jpg" alt="Chichen Itza, Ik Kil Cenote, and Valladolid Day Trip">
+                    <h3>Chichen Itza, Ik Kil Cenote, and Valladolid Day Trip</h3>
+                    <div class="details">
+                        <span class="duration">Duration: 12 hours - 1 day</span>
+                        <span class="rating">4.5 (483)</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="powered">Powered by GetYourGuide. Join our travel affiliate program</p>
+
+        </div>
+
+
+
+
+        <div class="items">
+
+            <h1>4. Valladolid</h1>
+            <img class="imag1" src="images/Valladolid image.jpg" alt="">
+
+            <h3>Nestled in the heart of Mexico’s Yucatán Peninsula, Valladolid seamlessly blends colonial charm with
+                Mayan history. This quaint town, with its pastel-colored buildings and cobblestone streets, offers a
+                peaceful retreat away from the bustling tourist hubs.</h3>
+            <h5>Valladolid’s central location makes it an ideal base for exploring nearby cenotes, ancient ruins, and
+                the vibrant culture of the region. Whether you’re wandering through the picturesque town square or
+                savoring local cuisine, Valladolid invites you to slow down and experience the authentic beauty of
+                Mexico.</h5>
+            <h6>ROUTE OPEN: The Mayan train route from Cancun to Valladolid is open. Service runs a few times per day,
+                at a cost of around $24 USD (472 MXN) for the “Tourist Class” ticket.</h6>
+            <h4>TRAVEL TIME: The travel time from Cancun to Valladolid is 1.5 hours by train.</h4>
+        </div>
+
+
+
+
+        <div class="items">
+
+            <h1>5.Chichen Itza: Ancient Wonder Of The World
+                Temple of Kukulcan</h1>
+            Temple of Kukulcan</h1>
+            <img class="imag1" src="images/chichen-itza-mayan-pyramid-900x600.jpg.webp" alt="">
+
+            <h3>Chichén Itzá, one of the New Seven Wonders of the World, stands as a breathtaking testament to the
+                ancient Maya civilization. Located in Mexico’s Yucatán Peninsula, this UNESCO World Heritage Site draws
+                visitors from around the globe with its towering pyramid, El Castillo, and its rich historical
+                significance.</h3>
+            <h5>Once a thriving city, Chichén Itzá is filled with awe-inspiring structures like the Temple of the
+                Warriors and the Sacred Cenote. Whether you’re marveling at its intricate stone carvings or learning
+                about its astronomical significance, Chichén Itzá offers a captivating journey into the mysteries of the
+                past.</h5>
+            <h6>ROUTE OPEN: The Mayan train route from Cancun to Chichen Itza is open. Service runs a few times per day,
+                at a cost of around $30 USD (596 MXN) for the “Tourist Class” ticket.</h6>
+            <h4>TRAVEL TIME: The travel time from Cancun to Chichen Itza is 2 hours by train.</h4>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name="viewport" content=width=device-width, initial-scale="1.0" />
+    <meta http-equiv="x-UA-compatible" content="IE=edge" />
+    <meta http-equiv="refresh" content="60" />
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <meta name="author" content="" />
+    <!-- favicon-->
+    <link rel="icon" type="imge/x-icon" href="" />
+    <!--font family-->
+    <link rel="stylesheet" href="fonts/NotoSans-Regular.ttf" />
+    <!-- fontawesone icon -->
+    <link rel="stylesheet" href="icons/css/all.css" />
+    <link rel="stylesheer" href="icons/js/all.js" />
+    <title>Ultimatetravel</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .more_use {
+            padding: 40px 120px;
+            padding-bottom: 60px;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 40px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .main-content {
+            justify-content: center;
+            text-align: justify;
+            font-size: larger;
+        }
+
+        .main-content img {
+            width: 100%;
+            height: 60%;
+            border-radius: 10px;
+        }
+
+        .main-content img:hover {
+            filter: drop-shadow(1);
+            transform: scale(1.03);
+
+        }
+
+        .main-content h1 {
+            text-align: left;
+        }
+
+        .main-content p {
+            text-align: left;
+        }
+
+        .main-content h4 span {
+            color: brown;
+        }
+
+        .main-content h5 {
+            font-size: medium;
+        }
+
+        .main-content h5 span {
+            color: brown;
+        }
+
+        .sidebar {
+            box-sizing: border-box;
+        }
+
+        .sidebar h2:hover {
+            text-align: 3rem;
+            color: rgb(179, 14, 121);
+        }
+
+        .sidebar img {
+            width: 65%;
+            height: 45%;
+            border-radius: 10px;
+
+        }
+
+        .sidebar img:hover {
+            filter: drop-shadow(1);
+            transform: scale(1.03);
+
+        }
+
+        .sidebar-text p {
+            font-size: x-large;
+            padding-bottom: 20px;
+        }
+
+        button {
+            font-size: 18px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            padding: 0.7em 2em;
+            border: solid 3px #60a4ed;
+            border-radius: 2px;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+            color: #16e0ee;
+            text-decoration: none;
+            transition: 0.3s ease all;
+            z-index: 1;
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            background-color: #346ae0;
+            z-index: -1;
+
+        }
+
+        button:hover,
+        button:focus {
+            color: #fff;
+        }
+
+        button:hover::before,
+        button:focus::before {
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+
+        }
+
+        button:active {
+            transform: scale(0.9);
+        }
+
+        .social-iconss {
+            padding-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .column_card h2 {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        .column_card h2:hover {
+            color: coral;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.5s ease;
+        }
+
+        .icon.instagram {
+            background-color: #770a6e;
+            color: #fff;
+        }
+
+        .icon.youtube {
+            background-color: #d01111;
+            color: #fff;
+        }
+
+        .icon.facebook {
+            background-color: #085695;
+            color: #fff;
+        }
+
+        .icon.twitter {
+            background-color: #44c9be;
+            color: #fff;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar-text h3 {
+            padding-top: 10px;
+            color: chocolate;
+        }
+
+        .sidebar-text h3:hover {
+            color: darkslateblue;
+        }
+
+        .sidebar-text h4 {
+            color: rgb(22, 126, 224);
+        }
+
+        .sidebar-text h4:hover {
+            color: blue;
+        }
+
+        .sidebar-text h1 {
+            text-align: center
+        }
+
+        .sidebar-text h1:hover {
+
+            color: #770a6e;
+        }
+
+        /* */
+        .control {
+            padding: 50px 120px;
+        }
+
+        .control h1 {
+
+            font-size: 3rem;
+        }
+
+        .control h1:hover {
+            color: rgb(5, 114, 116);
+            font-size: 3rem;
+        }
+
+        .control h4 {
+            margin: 0;
+
+            font-size: 1.4rem;
+        }
+
+        .control h4:hover {
+            color: chocolate;
+        }
+
+        .control h5 {
+            margin: 0;
+            padding-top: 5px;
+            font-size: 1.2rem;
+        }
+
+        .control h5:hover {
+            color: rgb(127, 205, 247);
+        }
+
+        .work {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 50px 120px;
+            column-gap: 30px;
+            justify-content: center;
+
+        }
+
+        .work h2 {
+            color: rgb(135, 58, 3);
+            font-size: x-large;
+        }
+
+        .work_mores img {
+            width: 85%;
+            height: 50%;
+        }
+
+        h6 {
+            padding-top: 50px;
+            font-size: 2rem;
+            margin: 0;
+            text-align: center;
+        }
+
+        span {
+            color: coral;
+
+        }
+        
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="more_use">
+
+        <div class="container">
+
+            <div class="main-content">
+                <h1>Best Travel Gear (My Ultimate Travel Packing List)</h1>
+                <p>Last updated: September 12, 2023</p>
+                <img src="images/travel-gear-luggage-900x600.jpg.webp" alt="Travel gear image" class="main-image">
+                <h4>Curious about the travel gear I bring with me not work for everyone. on my international adventures?
+                    I’ve put together this gear page to share my long-term travel packing list. Obviously, I recommend
+                    traveling with high-quality, lightweight & durable stuff.</h4>
+                <h4>The travel gear I use may <span> I carry extra photography</span> equipment to maintain this travel
+                    blog, along with camping equipment for trekking up mountains, hitchhiking long distance, or
+                    exploring rainforests from time to time.</h4>
+
+            </div>
+
+
+            <div class="sidebar">
+                <h2>ABOUT CHANDANA</h2>
+                <img src="images/chandana.imge.jpg" alt="About Matt" class="sidebar-image">
+                <div class="sidebar-text">
+
+                    <p>Learn How I Became The Expert Vagabond</p>
+                    <button>READ MORE</button>
+                    <div class="column_card">
+                        <h2>Social Media</h2>
+                        <div class="social-iconss">
+                            <a target href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+                            <a target="" href="#" class="icon youtube"><i class="fab fa-facebook"></i></a>
+                            <a target="" href="#" class="icon facebook"><i class="fab fa-twitter"></i></a>
+                            <a target="" href="#" class="icon twitter"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-text">
+
+                    <h3>FEATURED ARTICLE</h3>
+                    <h4>HOW TO CHOOSE THE</h4>
+                    <h1>BEST TRAVEL BACKPACK</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h6>READ MOR : <span>How To Choose The Perfect Travel Backpack</span></h6>
+    <div class="control">
+        <h1>My Main Travel Bags</h1>
+        <h4>I currently travel with up to 3 different bags. A rolling suitcase as my main bag, a backpack for trips that
+            entail hiking mountains or trekking, plus an airplane carry-on camera daypack.</h4>
+        <h5>I usually only need to check one bag, the hard shell suitcase. The hiking backpack can lie-flat inside it.
+            For bigger trips that require more technical gear (like trekking or winter camping), I’ll check both.</h5>
+
+        <div class="work">
+            <div class="work_mores">
+                <img src="images/tag1.webp" alt="">
+                <h2>Victorinox Suitcase</h2>
+                <h4>My favorite lightweight travel suitcase with lots of room, strong locking zipper and a tough outer
+                    shell. Quiet 360 degree wheels that can take plenty of airport abuse.</h4>
+            </div>
+            <div class="work_mores">
+                <img src="images/tag2.webp" alt="">
+                <h2>Hiking & Travel Backpack</h2>
+                <h4>This lightweight, comfortable hiking & travel backpack includes full front-zipper access to all my
+                    gear. It lies flat in my suitcase if needed.</h4>
+            </div>
+            <div class="work_mores">
+                <img src="images/tag2.webp" alt="image" />
+                <h2>Camera Daypack</h2>
+                <h4>Amazing carry-on camera & laptop backpack. I use this for day hikes with my camera gear, but it has
+                    room for things like snacks, water, jacket, full-size tripod, and more.</h4>
+            </div>
+        </div>
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="icons/js/all.js"></script>
+    <script src="icons/js/all.min.js"></script> `
+
+</body>
+
+</html>

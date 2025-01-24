@@ -1,0 +1,565 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border: 2px;
+    border-bottom: solid 3px chocolate;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+
+    width: 70px;
+
+
+    margin-right: 10px;
+
+}
+
+/* destination list */
+.menu {
+
+    padding: 10px 20px;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+
+    color: white;
+    border: none;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0px 10px 0px 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+
+    min-width: 200px;
+    margin-top: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+    color: chocolate;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: rgb(2, 2, 59);
+}
+
+.dropdown a:hover {
+    color: chocolate;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 120vh;
+    height: 130vh;
+    background: url('http://www.wearedesignteam.com/hd-wallpaper/images/woman-traveler.jpg') no-repeat center center/cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px 0px 40em;
+
+    padding-bottom: 60px;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 30px;
+    padding: 0px 30px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+.hero-overlay:hover {
+    filter: drop-shadow(2);
+    transform: scale(1.03);
+}
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+    text-decoration: none;
+    background: darkorange;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.hero-buttons .btn:hover {
+    background: #373737;
+}
+
+.hero-buttons .btn-secondary {
+    background: transparent;
+    border: 2px solid orange;
+    background-color: darkorange;
+}
+
+.hero-buttons .btn-secondary:hover {
+    background: #373737;
+    color: white;
+}
+
+/* container_more section */
+.container_more {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 110px;
+    /* Keep existing padding */
+    border-bottom: 1px solid #000;
+    /* Use relative positioning to position the line */
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.post-grid_ {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+}
+
+.post_ h3 a {
+    text-align: center;
+    color: #f79815;
+    font-size: large;
+    padding-bottom: 50px;
+    text-decoration: none;
+}
+
+.post_ h3:hover {
+    filter: drop-shadow(1);
+    transform: scale(1.03);
+    color: #f79815;
+}
+
+.post_ img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.post_ img:hover {
+    filter: drop-shadow(3);
+    transform: scale(1.03);
+}
+
+/* container_ Section  */
+.container_ {
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 90px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 30px 0px;
+}
+
+.container_:hover {
+    filter: drop-shadow(2);
+    transform: scale(1.03);
+}
+
+.image-container_ {
+    width: 30%;
+}
+
+.image-container_ img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content_ {
+    width: 60%;
+}
+
+.content_ h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content_ p {
+    margin-bottom: 20px;
+}
+
+.subscribe-container {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe-container input[type="email"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.subscribe-container a {
+    background-color: #007bff;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.subscribe-container button:hover {
+    background-color: orange;
+}
+
+.consent-container {
+    margin-top: 10px;
+}
+
+.consent-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* more-posts_ Section  */
+.Blog_card {
+    padding: 20px 650px;
+}
+
+.Blog_card a {
+    display: block;
+    margin-top: 30px;
+    font-size: x-large;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: chocolate;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*  travel_guide Section  */
+.more-postss_ {
+    margin: 0;
+    padding: 0;
+}
+
+.travel_guide {
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0px;
+
+}
+
+.travel_guide h2 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.guide-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.guide_card {
+    text-align: center;
+    padding: 20px;
+}
+
+.guide_card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.guide_card img:hover {
+    filter: drop-shadow(4);
+    transform: scale(1.03);
+}
+
+.guide_card h3 a {
+    margin-bottom: 5px;
+    color: #f79815;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: oblique;
+}
+
+.guide_card h3 a:hover {
+    filter: drop-shadow(1);
+    transform: scale(1.03);
+    color: mediumslateblue;
+}
+
+.guide_card p {
+    color: dimgray;
+
+}
+
+/*  guides_cards Section  */
+.travel_guides {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #000;
+}
+
+.travel_guides {
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0px;
+    border-bottom: 1px solid #000;
+
+}
+
+.travel_guides h2 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.guide-containers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.guide_cards {
+    text-align: center;
+    padding: 20px;
+}
+
+.guide_cards img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.guide_card img:hover {
+    filter: drop-shadow(4);
+    transform: scale(1.03);
+}
+
+.guide_cards h3 a {
+    margin-bottom: 5px;
+    color: #f38de8;
+    font-size: larger;
+    font-weight: bold;
+    font-style: oblique;
+    text-decoration: none;
+}
+
+.guide_cards h3 a:hover {
+    filter: drop-shadow(1);
+    transform: scale(1.03);
+    color: rgb(84, 127, 234);
+}
+
+.guide_cards p {
+    color: dimgray;
+
+}
+
+
+        /*  footer Section  */
+
+        footer {
+            background-color: #111;
+            /* Dark background color */
+            color: #fff;
+            /* White text color */
+            padding: 30px 0px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 960px;
+            /* Adjust as needed */
+            margin: 0 auto;
+        }
+
+        .column_card {
+            width: 30%;
+            padding-bottom: 8px;
+        }
+
+        .column_card li a:hover {
+            color: #f79815;
+        }
+
+        .column_card h2{
+            font-size: x-large;
+            margin: 0;
+            padding: 0;
+        }
+
+        .column_card h3 {
+            font-size: x-large;
+            margin-bottom: 15px;;
+           
+        }
+
+        .column_card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .column_card ul li {
+            margin-bottom: 10px;
+        }
+
+        .column_card ul li a {
+            color: #fff;
+            font-size: medium;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            padding-top: 10px;
+            display: flex;
+            justify-content: left;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .column_card  h2{
+            text-align: center;
+
+        }
+
+        .icon {
+            
+            width: 100px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.5s ease;
+        }
+
+        .icon.instagram {
+            background-color: #770a6e;
+            color: #fff;
+            width: 100px;
+        }
+
+        .icon.youtube {
+            background-color: #d01111;
+            color: #fff;
+        }
+
+        .icon.facebook {
+            background-color: #085695;
+            color: #fff;
+        }
+
+        .icon.twitter {
+            background-color: #44c9be;
+            color: #fff;
+        }
+
+        .icon:hover {
+            transform: scale(1.5);
+            color: #fff;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: medium;
+            font-size: 12px;
+            color: gray;
+        }
+
+        .copyright a {
+            color: #fff;
+            font-size: medium;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+        .copyright a:hover {
+            color: #f79815;
+        }
+
+      
